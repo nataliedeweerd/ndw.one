@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Stack Motion Hover Effects | Codrops</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Molengo" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body>
+		<main>
+            <section class="intro">
+                <div class="parallax">
+                    <img src="svg/parallax__sky.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
+                    <img src="svg/parallax__mountain1.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
+                    <img src="svg/parallax__mountain2.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
+                    <img src="svg/parallax__mountain3.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
+                    <img src="svg/parallax__shrubs.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
+                    <img src="svg/parallax__trees.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
+                </div>
+            </section>
+            
+			<section class="portfolio">
+                <h1>Portfolio</h1>
+				<div class="grid grid--effect">
+					<a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c3">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/3.png" alt="Image"/>
+							</div>
+						</div>
+					</a>
+                    <a href="#" class="grid__item grid__item--c1">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/1.png" alt="Image"/>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="grid__item grid__item--c2">
+						<div class="stack">
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__deco"></div>
+							<div class="stack__figure">
+								<img class="stack__img" src="img/2.png" alt="Image"/>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			
+
+		</main>
+       
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        
+		<script src="js/anime.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			[].slice.call(document.querySelectorAll('.grid--effect > .grid__item')).forEach(function(stackEl) {
+				new FolioFx(stackEl);
+			});
+		})();
+		</script>
+	</body>
+</html>
