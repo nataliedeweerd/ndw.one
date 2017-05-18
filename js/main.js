@@ -10,7 +10,12 @@
  */
  
 jQuery(function($) {
-    
+    var relax__cloud = new Rellax('.parallax__cloud');
+    var relax__mountain1 = new Rellax('.parallax__mountain--1');
+    var relax__mountain2 = new Rellax('.parallax__mountain--2');
+    var relax__mountain3 = new Rellax('.parallax__mountain--3');
+    var relax__shrubs = new Rellax('.parallax__shrubs');
+    var relax__trees = new Rellax('.parallax__trees');
 });
  
 ;(function(window) {

@@ -3,7 +3,25 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Stack Motion Hover Effects | Codrops</title>
+		<title>Flip.Sphere</title>
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
         
         <link href="https://fonts.googleapis.com/css?family=Lobster|Molengo" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -11,21 +29,23 @@
         
 		<script>document.documentElement.className = 'js';</script>
 	</head>
+    
 	<body>
 		<main>
             <section class="intro">
                 <div class="parallax">
-                    <img src="svg/parallax__sky.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
-                    <img src="svg/parallax__mountain1.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
-                    <img src="svg/parallax__mountain2.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
-                    <img src="svg/parallax__mountain3.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
-                    <img src="svg/parallax__shrubs.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
-                    <img src="svg/parallax__trees.svg" style="position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);">
+                    <div class="parallax__sky"></div>
+                    <img src="svg/parallax__cloud.svg" class="parallax__cloud" data-rellax-speed="-10" />
+                    <img src="svg/parallax__mountain1.svg" class="parallax__mountain--1" data-rellax-speed="-6" />
+                    <img src="svg/parallax__mountain2.svg" class="parallax__mountain--2" data-rellax-speed="-4" />
+                    <img src="svg/parallax__mountain3.svg" class="parallax__mountain--3" data-rellax-speed="0" />
+                    <img src="svg/parallax__shrubs.svg" class="parallax__shrubs" data-rellax-speed="6" />
+                    <img src="svg/parallax__trees.svg" class="parallax__trees" data-rellax-speed="10" />
                 </div>
             </section>
             
 			<section class="portfolio">
-                <h1>Portfolio</h1>
+                <h1></h1>
 				<div class="grid grid--effect">
 					<a href="#" class="grid__item grid__item--c1">
 						<div class="stack">
@@ -94,6 +114,7 @@
           crossorigin="anonymous"></script>
         
 		<script src="js/anime.min.js"></script>
+        <script src="js/rellax.min.js"></script>
 		<script src="js/main.js"></script>
 		<script>
 		(function() {

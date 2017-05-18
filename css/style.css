@@ -27,19 +27,34 @@ h3 {
 
 .intro{
     overflow:hidden;
+    height: 130vh;
+    background: #08183b;
+    position: relative;
 }
 
 .parallax{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    position: relative;  
-    background: #edde5d; 
-    background: -moz-linear-gradient(top, #edde5d 0%, #ffc034 20%, #c85e81 41%); 
-    background: -webkit-linear-gradient(top, #edde5d 0%,#ffc034 20%,#c85e81 41%); 
-    background: linear-gradient(to bottom, #edde5d 0%,#ffc034 20%,#c85e81 41%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edde5d', endColorstr='#c85e81',GradientType=0 ); 
+    position: relative;
 }
+
+.parallax__sky{
+	width:inherit;
+	height:inherit;
+	background: #edde5d;
+	background: -moz-linear-gradient(top, #edde5d 0%, #ffc034 20%, #c85e81 41%);
+	background: -webkit-linear-gradient(top, #edde5d 0%,#ffc034 20%,#c85e81 41%);
+	background: linear-gradient(to bottom, #edde5d 0%,#ffc034 20%,#c85e81 41%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edde5d', endColorstr='#c85e81',GradientType=0 );
+}
+
+.parallax__cloud{position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);z-index: 4;}
+.parallax__mountain--1{position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);z-index: 5;}
+.parallax__mountain--2{position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);z-index: 6;}
+.parallax__mountain--3{position: absolute;left: -50px;bottom: -60px;width: calc(100% + 100px);z-index: 7;}
+.parallax__shrubs{position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);z-index: 8;}
+.parallax__trees{position: absolute;left: -50px;bottom: -140px;width: calc(100% + 100px);z-index: 10;}
+
 
 /* Content */
 .portfolio {
@@ -48,6 +63,7 @@ h3 {
 	flex-wrap: wrap;
 	align-items: center;
 	padding: 0 0 1em;
+	background: #08183b;
 }
 
 .portfolio h1 {
