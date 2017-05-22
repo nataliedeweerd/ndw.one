@@ -6,11 +6,20 @@ body{
     line-height:1.3;
 }
 
-h1{
-    font-family: 'Lobster', cursive;
-    font-size: 160px;
-    line-height: 1;
-    display: block;
+
+h1 {
+	color: #ffffff;
+	font-family: 'Raleway',sans-serif;
+	font-size: 70px;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	color: #edde5d;
+	background: linear-gradient(to bottom, #edde5d 0%,#ffc034 40%,#c85e81 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 50px;
+	line-height: 1;
 }
 
 h2 {
@@ -27,7 +36,7 @@ h3 {
 
 .intro{
     overflow:hidden;
-    height: 130vh;
+    height: 100vh;
     background: #08183b;
     position: relative;
 }
@@ -62,16 +71,12 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	padding: 0 0 1em;
 	background: #08183b;
+	margin-top: 35vh;
 }
 
 .portfolio h1 {
 	flex: 1 100%;
-}
-
-.portfolio h2{
-    flex: 1 100%;
 }
 
 /* Grid */
@@ -81,10 +86,9 @@ h3 {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	padding: 0 7em;
-	perspective: 800px;
-	perspective-origin: 50% 100%;
+	max-width: 1400px;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .grid__item {
@@ -180,3 +184,4 @@ h3 {
 	opacity: 1;
 }
 
+main{height:300vh;}
