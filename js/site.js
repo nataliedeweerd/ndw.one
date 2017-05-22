@@ -15,6 +15,7 @@ jQuery(function($) {
     var rellax__mountain2 = new Rellax('.parallax__mountain--2');
     var rellax__mountain3 = new Rellax('.parallax__mountain--3');
     var rellax__shrubs = new Rellax('.parallax__shrubs');
+    var rellax__h1 = new Rellax('.parallax h1');    
 });
  
 ;(function(window) {

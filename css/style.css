@@ -7,19 +7,12 @@ body{
 }
 
 
-h1 {
-	color: #ffffff;
+h1 {	
 	font-family: 'Raleway',sans-serif;
 	font-size: 70px;
 	font-weight: 800;
 	text-align: center;
 	text-transform: uppercase;
-	color: #edde5d;
-	background: linear-gradient(to bottom, #edde5d 0%,#ffc034 40%,#c85e81 70%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin-bottom: 50px;
-	line-height: 1;
 }
 
 h2 {
@@ -39,12 +32,23 @@ h3 {
     height: 100vh;
     background: #08183b;
     position: relative;
+    margin-bottom: 40vh;
 }
 
 .parallax{
     width: 100vw;
     height: 100vh;
     position: relative;
+}
+
+.parallax h1 {
+    color: #ffffff;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	text-align: center;
+	width: inherit;
+	font-size: 30px;
 }
 
 .parallax__sky{
@@ -66,17 +70,29 @@ h3 {
 
 
 /* Content */
+
+.colour{
+    margin-bottom:30vh;
+}
+
+.colour h1{
+    color: #edde5d;
+	background: linear-gradient(to bottom, #edde5d 0%,#ffc034 40%,#c85e81 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 50px;
+	line-height: 1;
+    flex: 1 100%;
+}
+
+/* Portfolio */
+
 .portfolio {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	background: #08183b;
-	margin-top: 35vh;
-}
-
-.portfolio h1 {
-	flex: 1 100%;
 }
 
 /* Grid */
@@ -183,5 +199,3 @@ h3 {
 .grid--effect .column {
 	opacity: 1;
 }
-
-main{height:300vh;}
