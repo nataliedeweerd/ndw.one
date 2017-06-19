@@ -96,7 +96,7 @@ h3 {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	max-width: 1400px;
+	max-width: 1200px;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -135,10 +135,14 @@ h3 {
 }
 
 .technologies li {
-	color: #edde5d;
+	color: #f7aa00;
 	float: left;
 	padding: 0 70px 10px 0;
 }
+
+.technologies li:nth-child(4n+1) {color: #fff281;}
+.technologies li:nth-child(4n+2) {color: #f7aa00;}
+.technologies li:nth-child(4n+3) {color: #c85e81;}
 
 .technologies li span {
 	color: #fff;
@@ -236,7 +240,24 @@ h3 {
 	display: block;
 	flex: none;
 	width: 100%;
+    transition:0.1s;
 }
+
+.stack__title {
+	position: absolute;
+	color: #08183b;
+	opacity: 0;	
+	font-family: 'Raleway',sans-serif;
+	font-size: 32px;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 30px;
+	transition: 0.3s;
+}
+
+.stack:hover .stack__title {opacity: 1;}
+.stack:hover .stack__img {filter: blur(3px);}
 
 .grid--effect {
 	perspective: none;
