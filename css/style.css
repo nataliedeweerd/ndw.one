@@ -30,6 +30,13 @@ h3 {
 	display: block;
 }
 
+input,
+textarea {
+    display: block;
+}
+
+/* Intro */
+
 .intro{
     overflow:hidden;
     height: 100vh;
@@ -158,6 +165,7 @@ h3 {
 	flex-wrap: wrap;
 	align-items: center;
 	background: #08183b;
+    margin-bottom:33%;
 }
 
 

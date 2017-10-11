@@ -15,7 +15,28 @@ jQuery(function($) {
     var rellax__mountain2 = new Rellax('.parallax__mountain--2');
     var rellax__mountain3 = new Rellax('.parallax__mountain--3');
     var rellax__shrubs = new Rellax('.parallax__shrubs');
-    var rellax__h1 = new Rellax('.parallax h1');    
+    var rellax__h1 = new Rellax('.parallax h1'); 
+    
+    
+    /* when submitting people form */
+	$('form.people').on('submit', function (e) {
+		
+		e.preventDefault();
+		
+		$.ajax({
+			type: 'POST',
+			url: '/form_submit.php',
+			data: $('form').serialize(),
+			success: function () {
+				$('.form__submitting').delay(3000).queue(function(next) {
+					$(this).addClass('form__submitting--completed');
+					next();
+				});
+			}
+		});
+	});
+    
+    
 });
  
 ;(function(window) {
