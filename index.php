@@ -117,7 +117,7 @@
             <form class="people" action="" method="post">
                 <input name="name" class="form__name" type="text" placeholder="Name"  tabindex="-1" notab="notab">
                 <input name="email" class="form__email" type="text" placeholder="Email"  tabindex="-1" notab="notab">
-                <textarea rows="4" cols="50" name="msg" tabindex="-1" notab="notab">Message</textarea>
+                <textarea rows="4" cols="50" name="msg" tabindex="-1" notab="notab" placeholder="Message"></textarea>
                 <input class="form__submit" type='submit' value='Submit' />
             </form>
         </section>

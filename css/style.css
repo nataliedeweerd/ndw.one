@@ -274,3 +274,60 @@ textarea {
 .grid--effect .column {
 	opacity: 1;
 }
+
+/* Contact */
+form {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+form input,
+form textarea{
+    box-sizing:border-box;
+    font-family:sans-serif;
+    width:100%;
+    padding:15px 20px;
+    margin:0 0 15px 0;
+    border:0;
+    background:transparent;
+    color:#fff38a;
+    border-bottom: 3px solid #fff38a;
+}
+
+form input::-webkit-input-placeholder,
+form input::-moz-placeholder,
+form input::-ms-input-placeholder,
+form input:-moz-placeholder {
+	color:#fff38a;
+}
+
+form input:nth-child(2){
+    color:#edde5d;
+    border-bottom-color:#edde5d;        
+}
+
+form input:nth-child(2)::-webkit-input-placeholder,
+form input:nth-child(2)::-moz-placeholder,
+form input:nth-child(2)::-ms-input-placeholder,
+form input:nth-child(2):-moz-placeholder {
+	color:#edde5d;
+}
+
+form textarea{
+    color:#f7aa00;
+    border-bottom-color:#f7aa00;        
+}
+
+form textarea::-webkit-input-placeholder,
+form textarea::-moz-placeholder,
+form textarea::-ms-input-placeholder,
+form textarea:-moz-placeholder {
+	color:#f7aa00;
+}
+
+form input[type=submit]{
+    color:#c85e81;
+    border-bottom-color:#c85e81;
+    cursor:pointer;
+}
