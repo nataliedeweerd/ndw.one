@@ -295,36 +295,30 @@ form textarea{
     border-bottom: 3px solid #fff38a;
 }
 
-form input::-webkit-input-placeholder,
-form input::-moz-placeholder,
-form input::-ms-input-placeholder,
-form input:-moz-placeholder {
-	color:#fff38a;
-}
+form input::-webkit-input-placeholder {color:#fff38a;}
+form input::-moz-placeholder {color:#fff38a;}
+form input::-ms-input-placeholder {color:#fff38a;}
+form input:-moz-placeholder {color:#fff38a;}
 
 form input:nth-child(2){
     color:#edde5d;
     border-bottom-color:#edde5d;        
 }
 
-form input:nth-child(2)::-webkit-input-placeholder,
-form input:nth-child(2)::-moz-placeholder,
-form input:nth-child(2)::-ms-input-placeholder,
-form input:nth-child(2):-moz-placeholder {
-	color:#edde5d;
-}
+form input:nth-child(2)::-webkit-input-placeholder {color:#edde5d;}
+form input:nth-child(2)::-moz-placeholder {color:#edde5d;}
+form input:nth-child(2)::-ms-input-placeholder {color:#edde5d;}
+form input:nth-child(2):-moz-placeholder {color:#edde5d;}
 
 form textarea{
     color:#f7aa00;
     border-bottom-color:#f7aa00;        
 }
 
-form textarea::-webkit-input-placeholder,
-form textarea::-moz-placeholder,
-form textarea::-ms-input-placeholder,
-form textarea:-moz-placeholder {
-	color:#f7aa00;
-}
+form textarea::-webkit-input-placeholder {color:#f7aa00;}
+form textarea::-moz-placeholder {color:#f7aa00;}
+form textarea::-ms-input-placeholder {color:#f7aa00;}
+form textarea:-moz-placeholder {color:#f7aa00;}
 
 form input[type=submit]{
     color:#c85e81;
