@@ -299,6 +299,10 @@ textarea {
 
 /* Contact */
 
+.colour.contact {
+    min-height: 0;
+}
+
 .form__wrapper {
     position: relative;
     min-height: 380px;
