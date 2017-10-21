@@ -35,7 +35,7 @@ jQuery(function($) {
         if(!errors){
             $.ajax({
                 type: 'POST',
-                url: 'form_submit.php',
+                url: '../inc/form_submit.php',
                 data: $('form').serialize(),
                 success: function () {
                     $('.contact__form').fadeOut(400).delay(3000).fadeIn(400);
