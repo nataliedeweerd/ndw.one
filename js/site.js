@@ -1,14 +1,4 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2017, Codrops
- * http://www.codrops.com
- */
- 
+
 jQuery(function($) {
     var rellax__cloud = new Rellax('.parallax__cloud');
     var rellax__mountain1 = new Rellax('.parallax__mountain--1');
@@ -19,22 +9,45 @@ jQuery(function($) {
     
     
     /* when submitting people form */
-	$('form.people').on('submit', function (e) {
-		
+	$('form.contact__form').on('submit', function (e) {
+        
+        $('.error').remove();
+        
+        var errors = false;
+        
+        if($('.form__name').val().length < 1){
+            $('.form__name').after('<div class="error">Please let me know your name!</div>');
+            errors = true;
+        }
+        
+        if(!(validateEmail($('.form__email').val())) && $('.form__email').val().length < 2){
+            $('.form__email').after('<div class="error">I can\'t reply to you if I don\'t know your email address!</div>');
+            errors = true;
+        }
+        
+        if($('.form__msg').val().length < 1){
+            $('.form__msg').after('<div class="error">Let me know what you want to talk about.</div>');
+            errors = true;
+        }
+        
 		e.preventDefault();
 		
-		$.ajax({
-			type: 'POST',
-			url: '/form_submit.php',
-			data: $('form').serialize(),
-			success: function () {
-				$('.form__submitting').delay(3000).queue(function(next) {
-					$(this).addClass('form__submitting--completed');
-					next();
-				});
-			}
-		});
+        if(!errors){
+            $.ajax({
+                type: 'POST',
+                url: 'form_submit.php',
+                data: $('form').serialize(),
+                success: function () {
+                    $('.contact__form').fadeOut(400).delay(3000).fadeIn(400);
+                }
+            });
+        }
 	});
+    
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
     
     
 });
