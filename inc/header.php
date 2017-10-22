@@ -30,6 +30,7 @@
         <link href="https://fonts.googleapis.com/css?family=Molengo|Raleway:400,800" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
         
 		<script>document.documentElement.className = 'js';</script>

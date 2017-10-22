@@ -3,9 +3,10 @@
 	$meta = "The portfolio of web developer Natalie de Weerd";
 	include('inc/header.php');
 ?>
+
 <section class="intro">
     <div class="parallax">
-        <h1 data-rellax-speed="-5">Hello,<br />welcome to my site!</h1>
+        <h1 data-rellax-speed="-5">Hello,<br />welcome to <span class="rwd-linebreak">my site!</span></h1>
         <div class="parallax__sky"></div>
         <img src="svg/parallax__cloud.svg" class="parallax__cloud" data-rellax-speed="-10" />
         <img src="svg/parallax__mountain1.svg" class="parallax__mountain--1" data-rellax-speed="-10" />
@@ -45,7 +46,7 @@
     </div>
 </section>
 
-<section class="colour portfolio">
+<section class="colour portfolio" id="portfolio">
     <h1>Portfolio</h1>
     <div class="grid grid--effect">
         <a href="tea" class="grid__item grid__item--1-3 grid__item--tea" data-portfolio="tea">

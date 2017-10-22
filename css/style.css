@@ -78,6 +78,10 @@ textarea {
 .parallax__shrubs{position: absolute;left: -50px;bottom: -50px;width: calc(100% + 100px);z-index: 8;}
 .parallax__trees{position: absolute;left: -50px;bottom: -140px;width: calc(100% + 100px);z-index: 10;}
 
+@media screen and (max-width:425px){
+    .rwd-linebreak{display:block;}
+}
+
 
 /* Content */
 
@@ -91,9 +95,14 @@ textarea {
 	background: linear-gradient(to bottom, #edde5d 0%,#ffc034 40%,#c85e81 70%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	margin-bottom: 50px;
+	margin:0 auto 50px auto;
 	line-height: 1;
     flex: 1 100%;
+    max-width:80%;
+}
+
+@media screen and (max-width:560px){
+    .colour h1{font-size:12vw;}
 }
 
 /* About */
@@ -107,6 +116,7 @@ textarea {
 	max-width: 1200px;
 	width: 90%;
 	margin: 0 auto;
+    align-items: flex-start;
 }
 
 .grid__item {
@@ -151,6 +161,27 @@ textarea {
 
 .technologies li span {
 	color: #fff;
+}
+
+.about img {
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width:1024px){
+    .grid__item--1-3,
+    .grid__item--2-3 {width: calc(50% - 50px);}
+}
+
+@media screen and (max-width:768px){
+    .grid__item--1-2,
+    .grid__item--1-3,
+    .grid__item--2-3 {width: 80%;}
+}
+
+@media screen and (max-width:320px){
+    .technologies li {width:100%;}
 }
 
 
@@ -214,9 +245,6 @@ textarea {
 .grid__item--placeholder3:focus {
     color:#f9e600;
 }
-
-
-
 
 .stack {
 	position: relative;
@@ -294,6 +322,10 @@ textarea {
 	opacity: 1;
 }
 
+@media screen and (max-width:320px){
+    .stack__title {font-size:24px;}
+}
+
 /* Contact */
 
 .colour.contact {
@@ -307,7 +339,7 @@ textarea {
 
 form {
     max-width: 900px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     position:relative;
     background:#08183b;
@@ -315,7 +347,8 @@ form {
 }
 
 form input,
-form textarea{    
+form textarea,
+.view-site{    
     font-family: 'Molengo', sans-serif;
     font-size: 20px;
     width:100%;
@@ -371,7 +404,8 @@ form textarea:focus::-moz-placeholder {color:#fffde2;}
 form textarea:focus::-ms-input-placeholder {color:#fffde2;}
 form textarea:focus:-moz-placeholder {color:#fffde2;}
 
-form input[type=submit]{
+form input[type=submit],
+.view-site{
     color:#c85e81;
     border-bottom-color:#c85e81;
     border-top:3px solid #c85e81;
@@ -384,9 +418,13 @@ form input[type=submit]{
     font-size: 20px;
     font-weight: 800;
     transition:0.3s;
+    display:block;
+    text-decoration:none;
+    text-align:center;
 }
 
-form input[type=submit]:hover{
+form input[type=submit]:hover,
+.view-site:hover{
 	background: #c85e81;
 	color:#121830;
 }
@@ -464,4 +502,37 @@ form input[type=submit]:hover{
 .social__icon:hover{
     color:#121830;
     background:#fff38a;
+}
+
+/* Individual Portfolio */
+
+.individual_portfolio {
+    position: relative;
+    margin-top:150px;
+    margin-bottom: 0;
+    min-height:0;
+}
+
+.back {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    color: #fff281;
+    opacity: 0.6;
+    font-size: 30px;
+    transition:0.3s;
+}
+
+.back:hover{
+    opacity:1;
+}
+
+.owl-item p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width:768px){
+    .view-site {margin-top: 10px;margin-bottom: 10px;}
 }

@@ -1,12 +1,15 @@
 
 jQuery(function($) {
-    var rellax__cloud = new Rellax('.parallax__cloud');
-    var rellax__mountain1 = new Rellax('.parallax__mountain--1');
-    var rellax__mountain2 = new Rellax('.parallax__mountain--2');
-    var rellax__mountain3 = new Rellax('.parallax__mountain--3');
-    var rellax__shrubs = new Rellax('.parallax__shrubs');
-    var rellax__h1 = new Rellax('.parallax h1'); 
     
+    
+    if($('section').hasClass('intro')){
+        var rellax__cloud = new Rellax('.parallax__cloud');
+        var rellax__mountain1 = new Rellax('.parallax__mountain--1');
+        var rellax__mountain2 = new Rellax('.parallax__mountain--2');
+        var rellax__mountain3 = new Rellax('.parallax__mountain--3');
+        var rellax__shrubs = new Rellax('.parallax__shrubs');
+        var rellax__h1 = new Rellax('.parallax h1'); 
+    }
     
     /* when submitting people form */
 	$('form.contact__form').on('submit', function (e) {
@@ -43,6 +46,16 @@ jQuery(function($) {
             });
         }
 	});
+    
+    $('.owl-carousel').owlCarousel({
+        center:true,
+        items:1,
+        loop:true,
+        margin:0,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true
+    });
     
     function validateEmail(email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
