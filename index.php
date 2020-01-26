@@ -145,9 +145,10 @@
     
     
     <div class="social">
-        <a href="https://github.com/nataliedeweerd/" class="social__icon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/nataliedeweerd/" class="social__icon" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/nataliedeweerd" class="social__icon" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://github.com/nataliedeweerd/" class="social__icon" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/nataliedeweerd/" class="social__icon" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/nataliedeweerd" class="social__icon" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://dev.to/nataliedeweerd" class="social__icon" target="_blank"><i class="fab fa-dev" aria-hidden="true"></i></a>
     </div>
 </section>
 

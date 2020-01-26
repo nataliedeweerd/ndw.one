@@ -29,11 +29,23 @@
         
         <link href="https://fonts.googleapis.com/css?family=Molengo|Raleway:400,800" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/reset.css" />
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
         
 		<script>document.documentElement.className = 'js';</script>
+        
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130686076-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-130686076-1');
+        </script>
+
 	</head>
     
 	<body>
