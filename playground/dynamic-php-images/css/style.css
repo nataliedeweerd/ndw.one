@@ -1,0 +1,50 @@
+body {
+	background: #ecedf1;
+	color:#0d3265;
+}
+
+article {
+	width: 1430px;
+	margin: 50px auto 50px auto;
+}
+
+.row img {
+	display: inline-block;
+}
+
+.input {
+	width: 500px;
+	margin: 0 auto 50px auto;
+}
+
+#name {
+	width: 60%;
+	padding: 7px 10px;
+	color: #0d3265;
+	border: 1px solid #8dc2e3;
+}
+
+button {
+	width: 30%;
+	margin-left: 5%;
+	padding: 7px 10px;
+	background: #0d3265;
+	border: 1px solid #0d3265;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.back {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    color: #08183b;
+    opacity: 0.6;
+    font-size: 30px;
+    transition:0.3s;
+}
+
+.back:hover{
+    opacity:1;
+}

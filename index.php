@@ -28,6 +28,7 @@
             <p>Here are some of the technologies I know:</p>
             <ul class="technologies">
                 <li><span>html5</span></li>
+                <li><span>html for emails</span></li>
                 <li><span>css3</span></li>
                 <li><span>scss</span></li>
                 <li><span>bootstrap</span></li>
@@ -38,7 +39,9 @@
                 <li><span>php</span></li>
                 <li><span>mysql</span></li>
                 <li><span>drupal7</span></li>
+                <li><span>openCart</span></li>
                 <li><span>wordpress</span></li>
+                <li><span>cpanel</span></li>
                 <li><span>plesk</span></li>
                 <li><span>git</span></li>
             </ul>
@@ -49,6 +52,30 @@
 <section class="colour portfolio" id="portfolio">
     <h1>Portfolio</h1>
     <div class="grid grid--effect">
+        <a href="competition-microsite" class="grid__item grid__item--1-3 grid__item--competition">
+            <div class="stack">
+                <div class="stack__deco"></div>
+                <div class="stack__deco"></div>
+                <div class="stack__deco"></div>
+                <div class="stack__deco"></div>
+                <div class="stack__figure">
+                    <img class="stack__img" src="img/competition_microsite--thumb.jpg" alt="Competition Microsite"/>
+                    <div class="stack__title">Competition Microsite</div>
+                </div>
+            </div>
+        </a>
+        <a href="playground/interactive-product-viewer/index.html" class="grid__item grid__item--1-3 grid__item--product">
+            <div class="stack">
+                <div class="stack__deco"></div>
+                <div class="stack__deco"></div>
+                <div class="stack__deco"></div>
+                <div class="stack__deco"></div>
+                <div class="stack__figure">
+                    <img class="stack__img" src="img/interactive_product_viewer--thumb.jpg" alt="Interactive Product Viewer"/>
+                    <div class="stack__title">Interactive Product Viewer</div>
+                </div>
+            </div>
+        </a>
         <a href="tea" class="grid__item grid__item--1-3 grid__item--tea" data-portfolio="tea">
             <div class="stack">
                 <div class="stack__deco"></div>
@@ -56,68 +83,44 @@
                 <div class="stack__deco"></div>
                 <div class="stack__deco"></div>
                 <div class="stack__figure">
-                    <img class="stack__img" src="img/tea_gen.jpg" alt="Image"/>
+                    <img class="stack__img" src="img/tea_gen.jpg" alt="Tea Generator"/>
                     <div class="stack__title">Tea Generator</div>
                 </div>
             </div>
-        </a>
-        <a href="secret_santa" class="grid__item grid__item--1-3 grid__item--santa">
+        </a>        
+        <a href="data-center" class="grid__item grid__item--1-3 grid__item--dowtk">
             <div class="stack">
                 <div class="stack__deco"></div>
                 <div class="stack__deco"></div>
                 <div class="stack__deco"></div>
                 <div class="stack__deco"></div>
                 <div class="stack__figure">
-                    <img class="stack__img" src="img/secret_santa.jpg" alt="Image"/>
-                    <div class="stack__title">Secret Santa Selector</div>
+                    <img class="stack__img" src="img/dowtk.jpg" alt="Email Data Center"/>
+                    <div class="stack__title">Email Data Center</div>
                 </div>
             </div>
         </a>
-        <a href="milton_bayer_signin" class="grid__item grid__item--1-3 grid__item--signin">
+        <a href="topps" class="grid__item grid__item--1-3 grid__item--topps">
             <div class="stack">
                 <div class="stack__deco"></div>
                 <div class="stack__deco"></div>
                 <div class="stack__deco"></div>
                 <div class="stack__deco"></div>
                 <div class="stack__figure">
-                    <img class="stack__img" src="img/signin.jpg" alt="Image"/>
-                    <div class="stack__title">Milton Bayer Signin System</div>
+                    <img class="stack__img" src="img/topps.jpg" alt="Topps Football"/>
+                    <div class="stack__title">Topps Football</div>
                 </div>
             </div>
         </a>
-        <a href="#" class="grid__item grid__item--1-3 grid__item--placeholder1">
+        <a href="playground/dynamic-php-images/" class="grid__item grid__item--1-3 grid__item--dynamic_php_images">
             <div class="stack">
                 <div class="stack__deco"></div>
                 <div class="stack__deco"></div>
                 <div class="stack__deco"></div>
                 <div class="stack__deco"></div>
                 <div class="stack__figure">
-                    <img class="stack__img" src="img/placeholder--1.png" alt="Image"/>
-                    <div class="stack__title">Placeholder 1</div>
-                </div>
-            </div>
-        </a>
-        <a href="#" class="grid__item grid__item--1-3 grid__item--placeholder2">
-            <div class="stack">
-                <div class="stack__deco"></div>
-                <div class="stack__deco"></div>
-                <div class="stack__deco"></div>
-                <div class="stack__deco"></div>
-                <div class="stack__figure">
-                    <img class="stack__img" src="img/placeholder--2.png" alt="Image"/>
-                    <div class="stack__title">Placeholder 2</div>
-                </div>
-            </div>
-        </a>
-        <a href="#" class="grid__item grid__item--1-3 grid__item--placeholder3">
-            <div class="stack">
-                <div class="stack__deco"></div>
-                <div class="stack__deco"></div>
-                <div class="stack__deco"></div>
-                <div class="stack__deco"></div>
-                <div class="stack__figure">
-                    <img class="stack__img" src="img/placeholder--3.png" alt="Image"/>
-                    <div class="stack__title">Placeholder 3</div>
+                    <img class="stack__img" src="img/dynamic_thumb.gif" alt="Dynamic PHP Images"/>
+                    <div class="stack__title">Dynamic PHP Images</div>
                 </div>
             </div>
         </a>

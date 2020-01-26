@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>NdW | Interactive Product Viewer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<style>
+		body {
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			/*background: hsl(0, 0%, 10%);*/
+		}
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		#info {
+			position: absolute;
+			bottom: 1em;
+			right: 1em;
+		}
+
+		a {
+			color: #1daae2;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="info">
+		<p><a href="https://ndw.one/#portfolio" target="_top">Demo by ndw.one</a></p>
+	</div>
+
+	<script type="module">
+
+		import * as THREE from '../build/three.module.js';
+
+		import { OrbitControls } from './jsm/controls/OrbitControls.js';
+		import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
+		import { RGBELoader } from './jsm/loaders/RGBELoader.js';
+		import { RoughnessMipmapper } from './jsm/utils/RoughnessMipmapper.js';
+
+		var container, controls;
+		var camera, scene, renderer;
+
+		init();
+		render();
+
+		function init() {
+
+			container = document.createElement('div');
+			document.body.appendChild(container);
+
+			var i = 4;
+
+			scene = new THREE.Scene();
+
+			camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
+			camera.position.set(-1.8, 0.6, 2.7);
+
+
+			new RGBELoader()
+				.setDataType(THREE.UnsignedByteType)
+				.setPath('textures/equirectangular/')
+				.load('bathroom_1k.hdr', function (texture) {
+
+					var envMap = pmremGenerator.fromEquirectangular(texture).texture;
+					scene.environment = envMap;
+
+					texture.dispose();
+					pmremGenerator.dispose();
+
+					render();
+
+					var loader = new GLTFLoader().setPath('models/glb/');
+					loader.load('tap.glb', function (gltf) {
+						gltf.scene.traverse(function (child) {
+							if (child.isMesh) {
+
+							}
+						});						
+						scene.add(gltf.scene);
+						gltf.scene.position.y = 0.5;
+						gltf.scene.updateMatrix();
+						render();
+					});
+
+				});
+
+			renderer = new THREE.WebGLRenderer({ antialias: true });
+			renderer.setPixelRatio(window.devicePixelRatio);
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			renderer.setClearColor(new THREE.Color("#eeeeee"));
+			renderer.toneMapping = THREE.ACESFilmicToneMapping;
+			renderer.toneMappingExposure = 0.8;
+			renderer.outputEncoding = THREE.sRGBEncoding;
+
+			container.appendChild(renderer.domElement);
+
+			var pmremGenerator = new THREE.PMREMGenerator(renderer);
+			pmremGenerator.compileEquirectangularShader();
+
+			controls = new OrbitControls(camera, renderer.domElement);
+			controls.addEventListener('change', render); // use if there is no animation loop
+			controls.minDistance = 500;
+			controls.maxDistance = 700;
+			controls.target.set(0, 0, -1);
+			controls.update();
+
+			window.addEventListener('resize', onWindowResize, false);
+
+		}
+
+		function onWindowResize() {
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize(window.innerWidth, window.innerHeight);
+
+			render();
+		}
+
+		//
+
+		function render() {
+			renderer.render(scene, camera);
+		}
+
+	</script>
+
+</body>
+
+</html>

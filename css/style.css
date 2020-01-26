@@ -35,6 +35,18 @@ textarea {
     display: block;
 }
 
+p a {
+    color: #fff281;
+    text-decoration: none;
+    border-bottom: 1px solid #fff281;
+    transition: 0.3s;
+}
+
+p a:hover{
+    color:#fd8200;
+    border-bottom-color:#fd8200;
+}
+
 /* Intro */
 
 .intro{
@@ -102,7 +114,10 @@ textarea {
 }
 
 @media screen and (max-width:560px){
-    .colour h1{font-size:12vw;}
+    .colour h1{
+        font-size:11vw;
+        margin-botom:10px;
+    }
 }
 
 /* About */
@@ -117,6 +132,7 @@ textarea {
 	width: 90%;
 	margin: 0 auto;
     align-items: flex-start;
+    pointer-events:all;
 }
 
 .grid__item {
@@ -197,6 +213,19 @@ textarea {
     margin-bottom:30vh;
 }
 
+.grid__item--competition,
+.grid__item--competition:hover,
+.grid__item--competition:focus {
+	color: #fff;
+}
+
+.grid__item--product,
+.grid__item--product:hover,
+.grid__item--product:focus {
+	color: #eee;
+}
+
+
 
 .grid__item--tea,
 .grid__item--tea:hover,
@@ -210,23 +239,33 @@ textarea {
 	color: #c3d600;
 }
 
-.grid__item--topps,
-.grid__item--topps:hover,
-.grid__item--topps:focus {
-	color: #00ff87;
-}
-
-.grid__item--dowtk,
-.grid__item--dowtk:hover,
-.grid__item--dowtk:focus {
-    color:#f32d70;
-}
-
 .grid__item--signin,
 .grid__item--signin:hover,
 .grid__item--signin:focus {
     color:#fd8200;
 }
+
+.grid__item--dowtk,
+.grid__item--dowtk:hover,
+.grid__item--dowtk:focus {
+    color:#1c1c1c;
+}
+
+.grid__item--topps,
+.grid__item--topps:hover,
+.grid__item--topps:focus {
+	color: #560971;
+}
+
+.grid__item--dynamic_php_images,
+.grid__item--dynamic_php_images:hover,
+.grid__item--dynamic_php_images:focus {
+	color: #04275d;
+}
+
+
+
+
 
 .grid__item--placeholder1,
 .grid__item--placeholder1:hover,
@@ -244,6 +283,13 @@ textarea {
 .grid__item--placeholder3:hover,
 .grid__item--placeholder3:focus {
     color:#f9e600;
+}
+
+.grid__item--dowtk .stack__title,
+.grid__item--topps .stack__title,
+.grid__item--dynamic_php_images .stack__title {
+    color: #fff;
+    text-shadow: 0 0 15px rgba(8, 24, 59, 0.75);
 }
 
 .stack {
@@ -300,6 +346,9 @@ textarea {
 
 .stack__title {
 	position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
 	color: #08183b;
 	opacity: 0;	
 	font-family: 'Raleway',sans-serif;
@@ -411,7 +460,7 @@ form input[type=submit],
     border-top:3px solid #c85e81;
     cursor:pointer;
     max-width: 180px;
-    margin: 40px auto 0 auto;
+    margin: 10px auto 0 auto;
     background: rgba(0,0,0,0.25);
     text-transform: uppercase;
     font-family: 'Raleway',sans-serif;
@@ -508,9 +557,31 @@ form input[type=submit]:hover,
 
 .individual_portfolio {
     position: relative;
-    margin-top:150px;
     margin-bottom: 0;
     min-height:0;
+    height: 100vh;
+    pointer-events:none;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media(max-width:1024px){
+    .vertical-center {
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:768px){
+    .vertical-center {
+        position: static;
+        transform: translate(0,0);
+        margin-top:80px;
+    }
 }
 
 .back {
