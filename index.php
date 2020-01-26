@@ -38,12 +38,15 @@
                 <li><span>gsap</span></li>
                 <li><span>php</span></li>
                 <li><span>mysql</span></li>
-                <li><span>drupal7</span></li>
-                <li><span>openCart</span></li>
-                <li><span>wordpress</span></li>
+                <li><span>drupal 7</span></li>
+                <li><span>drupal 8</span></li>
+                <li><span>magento 2</span></li>
                 <li><span>cpanel</span></li>
                 <li><span>plesk</span></li>
+                <li><span>ssh command line</span></li>
                 <li><span>git</span></li>
+                <li><span>adobe photoshop</span></li>
+                <li><span>adobe xd</span></li>
             </ul>
         </div>
     </div>
