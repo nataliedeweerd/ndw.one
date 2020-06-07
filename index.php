@@ -130,6 +130,15 @@
     </div>
 </section>
 
+<section class="colour blog">
+    <h1>Blog</h1>
+    
+    <div class="grid">
+        <?php include('inc/blog.php'); ?>
+    </div>
+</section>
+
+
 <section class="colour contact">
     <h1>Get in Touch</h1>
     

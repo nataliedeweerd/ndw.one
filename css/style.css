@@ -116,7 +116,7 @@ p a:hover{
 @media screen and (max-width:560px){
     .colour h1{
         font-size:11vw;
-        margin-botom:10px;
+        margin-bottom:10px;
     }
 }
 
@@ -606,4 +606,63 @@ form input[type=submit]:hover,
 
 @media screen and (max-width:768px){
     .view-site {margin-top: 10px;margin-bottom: 10px;}
+}
+
+/* blog */
+
+.colour.blog {
+    margin-bottom: 30vh;
+}
+
+.blog__article {
+    display: block;
+    text-decoration: none;
+    margin: 0 0 70px;
+}
+
+.blog__article h2 {
+    color: #fff38a;
+    text-align: center;
+    margin: 0 10px 5px 10px;
+    font-size: 32px;
+    font-family: Raleway, sans-serif;
+}
+
+.blog__description {
+    color: #edde5d;
+    text-align: center;
+    font-size:20px;
+    max-width:500px;
+    width:100%;
+    margin:0 auto 20px auto;
+}
+
+.blog__readmore {
+    color: #f7aa00;
+    border-bottom: 3px solid #f7aa00;
+    border-top: 3px solid #f7aa00;
+    cursor: pointer;
+    max-width: 180px;
+    margin: 10px auto 0 auto;
+    background: rgba(0,0,0,0.25);
+    text-transform: uppercase;
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding:15px 0;
+}
+
+.blog__readmore:hover:hover {
+    background: #f7aa00;
+    color: #121830;
+}
+
+@media screen and (max-width:560px){
+    .blog__article h2{
+        font-size:28px;
+    }
 }
