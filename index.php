@@ -142,6 +142,8 @@
 <section class="colour contact">
     <h1>Get in Touch</h1>
     
+    <?php 
+    /*
     <div class="form__wrapper">
         <form class="contact__form" action="" method="post">
             <input name="name" class="form__name" type="text" placeholder="Name">
@@ -151,6 +153,8 @@
         </form>
         <div class="form__success"><h3>Thank you for your message.</h3></div>
     </div>
+    */ 
+    ?>
     
     
     <div class="social">
