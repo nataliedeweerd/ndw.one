@@ -22,9 +22,10 @@ $response = json_decode($response, true);
 
 $i = 0;
 
+
 foreach ($response as $key => $article){
 
-	if(strlen($article['canonical_url']) > 0){
+	if (strpos($article['canonical_url'], 'flipsphere') !== false) {
 
 		echo '
 		<a href="'.$article['canonical_url'].'" target="_blank" class="blog__article">
